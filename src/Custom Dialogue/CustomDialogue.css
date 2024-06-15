@@ -1,0 +1,28 @@
+.custom-dialog-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .custom-dialog-content {
+    font-size: 16px;
+    color: red;
+  }
+  
+  .custom-dialog-actions {
+    justify-content: center;
+  }
+  
+  .custom-dialog-button {
+    color: red;
+    background-color: #3f51b5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .custom-dialog-button:hover {
+    background-color: #303f9f;
+  }
