@@ -19,7 +19,7 @@ class PostServices {
 
   async registration(credentials) {
     try {
-      const response = await this.api.post('/auth/signup', credentials);
+      const response = await this.api.post('/auth/registration', credentials);
       return response.data;
     } catch (error) {
       throw error.response.data;

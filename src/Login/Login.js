@@ -21,11 +21,10 @@ class Login extends Component {
 
     handleChange = (e) => {
         const { name, value } = e.target;
-        const uppercaseValue = value.toUpperCase();
         this.setState((prevState) => ({
             formValues: {
                 ...prevState.formValues,
-                [name]: uppercaseValue,
+                [name]: value,
             },
             formErrors: {
                 ...prevState.formErrors,
@@ -50,7 +49,7 @@ class Login extends Component {
                 if (response.code === 200) {
                     localStorage.setItem('userName', response.name);
                     localStorage.setItem('userEmail', response.email);
-                    const formattedMessage = `Login Success<br>Name: ${response.name}<br>Creation Time: ${response.createdAt}`;
+                    const formattedMessage = `Login Success<br>Name: ${response.name}<br>Login Time: ${response.loginTime}`;
                     this.setState({
                         dialogOpen: true,
                         dialogTitle: "Success",
